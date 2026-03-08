@@ -22,7 +22,7 @@ const UnitCard = ({ label, value }: {label: string; value: React.ReactNode}) => 
 
 export default function App() {
   const start = useMemo(() => new Date('2026-02-21T00:00:00+09:00'), []);
-  const target = useMemo(() => new Date('2026-04-07T00:00:00+09:00'), []);
+  const target = useMemo(() => new Date('2026-04-06T00:00:00+09:00'), []);
   const [now, setNow] = useState(() => new Date());
   useEffect(() => { const id = setInterval(() => setNow(new Date()), 1000); return () => clearInterval(id); }, []);
   const remainingMs = Math.max(0, target.getTime() - now.getTime());
@@ -58,7 +58,7 @@ export default function App() {
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">長期休みカウントダウン</h1>
             <p className="text-sm md:text-base text-zinc-700 dark:text-zinc-300 mt-0.5 flex flex-wrap items-center gap-2">
               <CalendarDays className="h-4 w-4" /> 開始 <span className="font-semibold">2026/2/21</span>
-              <span className="opacity-60">→</span> 終了 <span className="font-semibold">2026/4/7</span>
+              <span className="opacity-60">→</span> 終了 <span className="font-semibold">2026/4/6</span>
               <span className="inline-flex items-center gap-1 ml-2 px-2 py-0.5 rounded-full bg-amber-200/70 dark:bg-amber-900/40 text-amber-900 dark:text-amber-100 ring-1 ring-amber-400/50">
                 <Umbrella className="h-3.5 w-3.5" />
               </span>
@@ -90,7 +90,7 @@ export default function App() {
 
             <div className="mt-8 w-full">
               <div className="flex items-center justify-between text-xs md:text-sm text-zinc-700 dark:text-zinc-300">
-                <span>2/21</span><span>4/7</span>
+                <span>2/21</span><span>4/6</span>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-zinc-200/70 dark:bg-zinc-800/80 overflow-hidden ring-1 ring-black/5 dark:ring-white/10">
                 <motion.div initial={{width:0}} animate={{width: `${progress}%`}} transition={{type:'spring',stiffness:80,damping:20}}
