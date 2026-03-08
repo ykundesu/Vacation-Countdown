@@ -21,8 +21,8 @@ const UnitCard = ({ label, value }: {label: string; value: React.ReactNode}) => 
 );
 
 export default function App() {
-  const start = useMemo(() => new Date('2025-08-09T00:00:00+09:00'), []);
-  const target = useMemo(() => new Date('2025-09-28T00:00:00+09:00'), []);
+  const start = useMemo(() => new Date('2026-02-21T00:00:00+09:00'), []);
+  const target = useMemo(() => new Date('2025-04-07T00:00:00+09:00'), []);
   const [now, setNow] = useState(() => new Date());
   useEffect(() => { const id = setInterval(() => setNow(new Date()), 1000); return () => clearInterval(id); }, []);
   const remainingMs = Math.max(0, target.getTime() - now.getTime());
