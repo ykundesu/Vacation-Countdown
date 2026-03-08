@@ -1,5 +1,5 @@
 
-# 夏休みカウントダウン (Vite + React + Tailwind)
+# 長期休みカウントダウン (Vite + React + Tailwind)
 
 ## ローカル起動
 ```bash
