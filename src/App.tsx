@@ -55,7 +55,7 @@ export default function App() {
             <Sun className="h-5 w-5" />
           </div>
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">春休みカウントダウン</h1>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">長期休みカウントダウン</h1>
             <p className="text-sm md:text-base text-zinc-700 dark:text-zinc-300 mt-0.5 flex flex-wrap items-center gap-2">
               <CalendarDays className="h-4 w-4" /> 開始 <span className="font-semibold">2026/2/21</span>
               <span className="opacity-60">→</span> 終了 <span className="font-semibold">2026/4/7</span>
@@ -70,7 +70,7 @@ export default function App() {
           <div className="flex flex-col items-center">
             <div className="text-center">
               <div className="inline-flex items-center gap-2 text-lg md:text-xl text-zinc-700 dark:text-zinc-300">
-                <Clock className="h-5 w-5" /> {isOver ? '春休みは終了しました！' : hasStarted ? '終了まで' : '開始まで'}
+                <Clock className="h-5 w-5" /> {isOver ? '休みは終了しました！' : hasStarted ? '終了まで' : '開始まで'}
               </div>
               {!isOver && (
                 <h2 className="mt-2 text-4xl md:text-6xl font-extrabold tracking-tighter tabular-nums">
