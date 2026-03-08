@@ -90,7 +90,7 @@ export default function App() {
 
             <div className="mt-8 w-full">
               <div className="flex items-center justify-between text-xs md:text-sm text-zinc-700 dark:text-zinc-300">
-                <span>8/9</span><span>9/28</span>
+                <span>2/21</span><span>4/7</span>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-zinc-200/70 dark:bg-zinc-800/80 overflow-hidden ring-1 ring-black/5 dark:ring-white/10">
                 <motion.div initial={{width:0}} animate={{width: `${progress}%`}} transition={{type:'spring',stiffness:80,damping:20}}
