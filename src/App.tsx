@@ -22,7 +22,7 @@ const UnitCard = ({ label, value }: {label: string; value: React.ReactNode}) => 
 
 export default function App() {
   const start = useMemo(() => new Date('2026-02-21T00:00:00+09:00'), []);
-  const target = useMemo(() => new Date('2025-04-07T00:00:00+09:00'), []);
+  const target = useMemo(() => new Date('2026-04-07T00:00:00+09:00'), []);
   const [now, setNow] = useState(() => new Date());
   useEffect(() => { const id = setInterval(() => setNow(new Date()), 1000); return () => clearInterval(id); }, []);
   const remainingMs = Math.max(0, target.getTime() - now.getTime());
@@ -55,12 +55,12 @@ export default function App() {
             <Sun className="h-5 w-5" />
           </div>
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">夏休みカウントダウン</h1>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">春休みカウントダウン</h1>
             <p className="text-sm md:text-base text-zinc-700 dark:text-zinc-300 mt-0.5 flex flex-wrap items-center gap-2">
-              <CalendarDays className="h-4 w-4" /> 開始 <span className="font-semibold">2025/8/9</span>
-              <span className="opacity-60">→</span> 終了 <span className="font-semibold">2025/9/28</span>
+              <CalendarDays className="h-4 w-4" /> 開始 <span className="font-semibold">2026/2/21</span>
+              <span className="opacity-60">→</span> 終了 <span className="font-semibold">2026/4/7</span>
               <span className="inline-flex items-center gap-1 ml-2 px-2 py-0.5 rounded-full bg-amber-200/70 dark:bg-amber-900/40 text-amber-900 dark:text-amber-100 ring-1 ring-amber-400/50">
-                <Umbrella className="h-3.5 w-3.5" /> 夏っぽさ強め
+                <Umbrella className="h-3.5 w-3.5" />
               </span>
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function App() {
           <div className="flex flex-col items-center">
             <div className="text-center">
               <div className="inline-flex items-center gap-2 text-lg md:text-xl text-zinc-700 dark:text-zinc-300">
-                <Clock className="h-5 w-5" /> {isOver ? '夏休みは終了しました！' : hasStarted ? '終了まで' : '開始まで'}
+                <Clock className="h-5 w-5" /> {isOver ? '春休みは終了しました！' : hasStarted ? '終了まで' : '開始まで'}
               </div>
               {!isOver && (
                 <h2 className="mt-2 text-4xl md:text-6xl font-extrabold tracking-tighter tabular-nums">
